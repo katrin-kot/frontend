@@ -1,0 +1,55 @@
+.wraper{
+    width: 796px;
+    margin: 0 auto;
+}
+header {
+    background: grey;
+      
+}
+
+h1,h2 {margin: 0;
+text-transform: uppercase;
+color: darkgray;
+}
+.header-content{
+    padding: 10px;
+    border: 2px solid #383838;
+    
+}
+header .logo {
+    float: left;
+    margin-right: 5px;
+}
+
+.clearfix::after{content: "";
+display: block;
+clear: both;}
+
+header nav {
+    background: #383838;
+    height: 30px;
+    font-size: 0px;
+
+   
+}
+header a{ display: inline-block;
+text-decoration: none;
+color:white;
+line-height: 30px;
+padding:0 16px;
+box-sizing: border-box;
+font-size: 14px;
+/*border-top:2px solid #383838;*/
+}
+header a:hover {
+   background: white;
+   color:black; 
+}
+main{
+    margin-top: 10px;
+
+}
+.sidebar{
+    width: 224px;
+    float: left;
+}
