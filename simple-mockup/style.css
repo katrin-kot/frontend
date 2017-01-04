@@ -1,6 +1,16 @@
+
+body{min-height: 100%;
+    height: auto;
+    position: relative;
+    line-height: 1;}
+
 .wraper{
+    height: auto;
     width: 796px;
     margin: 0 auto;
+    position: relativ;
+    min-height: 100%;
+   
 }
 header {
     background: grey;
@@ -39,7 +49,6 @@ line-height: 30px;
 padding:0 16px;
 box-sizing: border-box;
 font-size: 14px;
-/*border-top:2px solid #383838;*/
 }
 header a:hover {
    background: white;
@@ -47,9 +56,48 @@ header a:hover {
 }
 main{
     margin-top: 10px;
+    padding-bottom: 30px;
 
+}
+.content{
+background: #cccccc;
+    overflow: hidden;
 }
 .sidebar{
     width: 224px;
     float: left;
+    background: #cccccc;
 }
+.sidebar nav{
+    background: #383838;
+    margin: 12px;
+}
+.sidebar nav a{
+    display: block;
+    height: 35px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+}
+article{
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 572px;
+    float:left;
+    
+}
+.sidebar nav a:hover{
+    text-decoration: underline;
+    background: #ffffff;
+    color: black;
+    }
+footer {
+ display:block;
+ background: #383838;
+  position: absolute;
+bottom:0;
+height: 20px;
+width: 796px;
+ }
