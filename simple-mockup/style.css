@@ -1,78 +1,93 @@
+html {
+    height: 100%;
+}
 
-body{min-height: 100%;
+body {
+    min-height: 100%;
     height: auto;
     position: relative;
-    line-height: 1;}
+    line-height: 1;
+    font-family: Arial;
+}
 
-.wraper{
-    height: auto;
+.wrapper {
     width: 796px;
     margin: 0 auto;
-    position: relativ;
-    min-height: 100%;
-   
-}
+    }
+
 header {
-    background: grey;
-      
+    background: #cccccc;
 }
 
-h1,h2 {margin: 0;
-text-transform: uppercase;
-color: darkgray;
-}
-.header-content{
+h1,
+h2 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #707070;
+  }
+
+.header-content {
     padding: 10px;
     border: 2px solid #383838;
-    
 }
+
 header .logo {
     float: left;
     margin-right: 5px;
 }
 
-.clearfix::after{content: "";
-display: block;
-clear: both;}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 header nav {
     background: #383838;
     height: 30px;
-    font-size: 0px;
+    font-size: 14px;
+}
 
-   
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
-header a{ display: inline-block;
-text-decoration: none;
-color:white;
-line-height: 30px;
-padding:0 16px;
-box-sizing: border-box;
-font-size: 14px;
-}
+
 header a:hover {
-   background: white;
-   color:black; 
+    background: #ffffff;
+    color: #383838;
 }
-main{
-    margin-top: 10px;
-    padding-bottom: 30px;
 
+.container {
+    padding-bottom: 30px;
 }
-.content{
-background: #cccccc;
+
+main {
+    margin-top: 10px;
+}
+
+.content {
+    background: #cccccc;
     overflow: hidden;
 }
-.sidebar{
+
+.sidebar {
     width: 224px;
     float: left;
     background: #cccccc;
 }
-.sidebar nav{
+
+.sidebar nav {
     background: #383838;
     margin: 12px;
 }
-.sidebar nav a{
+
+.sidebar nav a {
     display: block;
     height: 35px;
     text-decoration: none;
@@ -80,24 +95,26 @@ background: #cccccc;
     line-height: 35px;
     text-align: center;
 }
-article{
+
+article {
     background: #ffffff;
     box-sizing: border-box;
     padding: 0 10px;
     width: 572px;
-    float:left;
-    
+    float: left;
 }
-.sidebar nav a:hover{
+
+.sidebar nav a:hover {
     text-decoration: underline;
     background: #ffffff;
-    color: black;
-    }
+    color: #383838;
+}
+
 footer {
- display:block;
- background: #383838;
-  position: absolute;
-bottom:0;
-height: 20px;
-width: 796px;
- }
+    display: block;
+    background: #383838;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 796px;
+}
