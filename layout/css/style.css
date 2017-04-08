@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .main-content {
     height: auto;
     min-height: 100%;
@@ -43,6 +48,7 @@ footer {
 .footer-menu a {
     color: #e7e7e7;
     font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
     display: inline-block;
     margin-right: 40px;
     position: relative;
@@ -59,6 +65,66 @@ footer {
     left: -23px;
 }
 
+footer p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    color: #ff3333;
+}
+
+footer a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    color: #ff3333;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    color: #4e5456;
+}
+
+footer span a {
+    color: #4e5456;
+}
+
+.footer-content {
+    width: 60%;
+    float: left;
+}
+
+.social-net {
+    width: 40%;
+    float: left;
+    margin-top: 50px;
+}
+
+.social-net .right {
+    float: right;
+}
+
+footer .ico {
+    height: 69px;
+    width: 69px;
+    border-radius: 69px;
+    background: #ff3333;
+    float: left;
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    line-height: 69px;
+    margin-left: 10px;
+}
+
+footer .ico:hover {
+    background: #ffffff;
+    color: #ff3333;
+}
+
 .header {
     height: 80px;
     background: #202628;
@@ -71,6 +137,7 @@ footer {
 
 .header-logo {
     font-size: 2.5rem;
+    line-height: 80px;
     color: #e7e7e7;
     text-transform: uppercase;
 }
@@ -109,7 +176,7 @@ footer {
 
 .promo-block__arrow {
     position: absolute;
-    top: 70%;
+    top: 60%;
     display: inline-block;
     width: 33px;
     height: 69px;
@@ -135,7 +202,34 @@ footer {
 
 .promo-block__arrow i {
     color: #202628;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
+}
+
+.promo-block h2 {
+    position: absolute;
+    top: 70%;
+    text-transform: uppercase;
+    font-size: 3.1rem;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.promo-block a {
+    position: absolute;
+    top: 90%;
+    font-size: 1.5rem;
+    color: #ff3333;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.promo-block a:hover {
+    color: #ffffff;
+}
+
+.promo-block hr {
+    display: inline-block;
 }
 
 .grey-block {
@@ -151,24 +245,26 @@ footer {
     width: 30%;
     float: left;
     overflow: hidden;
-    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .grey-block-list .grey-text {
     float: right;
-    width: 70%;
+    width: 75%;
 }
 
 .grey-block-list .grey-text h3 {
     font-size: 2.1rem;
     color: #333333;
-    margin-bottom: 16px;
+    margin-botton: 16px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .grey-block-list .grey-text p {
     font-size: 1.4rem;
     font-family: 'Lato', sans-serif;
+    line-height: 25px;
 }
 
 .grey-block-list .grey-text a {
@@ -227,31 +323,41 @@ footer {
     font-family: 'Lato', sans-serif;
 }
 
+.basic-news {
+    padding-right: 50px;
+}
+
 .basic-info .basic-news h4 {
     padding-top: 34px;
     font-size: 1.6rem;
     font-weight: bold;
+    color: #202628;
 }
 
 .basic-info .basic-news p {
     font-size: 1.4rem;
+    line-height: 25px;
 }
 
-.news-block.bottom {
+.news-block .botton {
+    border: none;
     background: #ff3333;
     display: inline-block;
-    height: 40px;
-    width: 70px;
+    padding: 0px 18px;
     line-height: 40px;
     border-radius: 20px;
     text-align: center;
     text-transform: uppercase;
-}
-
-.bottom a {
     color: #ffffff;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.news-block .botton:hover {
+    background-color: #ffffff;
+    color: #ff3333;
+    border: 2px solid #ff3333;
 }
 
 .basic-info li {
@@ -296,24 +402,20 @@ footer {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.1rem;
     color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: normal;
 }
 
 .red-block .user-form p {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     color: #ffffff;
+    line-height: 25px;
 }
 
-.for-user {
+.user-form .for-user {
     margin-top: 25px;
     display: inline-block;
-}
-
-.for-user h3 {
-    text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2.1rem;
-    color: #ffffff;
 }
 
 .for-user input {
@@ -323,91 +425,101 @@ footer {
     border-radius: 20px;
     background: #ffffff;
 }
-.for-user .bottom {
+
+.for-user .botton {
     display: inline-block;
     background: #202628;
-    height: 40px;
-    width: 120px;
+    padding: 0px 18px;
     line-height: 40px;
     border-radius: 20px;
     text-align: center;
     text-transform: uppercase;
-}
-.for-user .bottom:hover{
-background: #ffffff;
-}
-
-.for-user .bottom a {
     color: #ffffff;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.4rem;
+    cursor: pointer;
 }
-.for-user .bottom a:hover{
-    color:#202628;
+
+.for-user .botton:hover {
+    background: #ffffff;
+    color: #202628;
 }
-.forum ul{
+
+.forum ul {
     list-style-type: none;
     padding-left: 0px;
 }
+
 .forum .icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 70px;
-  float: left;
-  background: url(../img/cover.jpg) no-repeat;
-  margin-right: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    float: left;
+    background: url(../img/cover.jpg) no-repeat;
+    margin-right: 30px;
 }
 
 .girl .icon {
-  background-position: -390px -310px; 
+    background-position: -390px -310px;
 }
 
 .cage .icon {
-  background-position: -596px -460px; 
+    background-position: -596px -460px;
 }
 
 .bird .icon {
-  background-position: -350px -544px;
+    background-position: -350px -544px;
 }
-.mail-block .grey-form{
+
+.mail-block .grey-form {
     height: 390px;
     width: 370px;
     background: #e7e7e7;
     border-radius: 4px;
-
 }
-.forum li{
+
+.forum li {
     display: block;
-    border-top:1px solid #4e5456;
+    border-top: 1px solid #e7e7e7;
     padding: 30px 0;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #4e5456;
 }
-.forum li p{
-    margin:0px;
+
+.forum li:last-child {
+    border-bottom: 1px solid #e7e7e7;
 }
+
+.forum li p {
+    margin: 0px;
+}
+
 .forum {
     width: 33%;
     float: left;
+}
 
-}
-.mail-block{
+.mail-block {
     width: 33%;
-display: inline-block;
+    float: left;
 }
-.contact-block h3{
-     text-transform: uppercase;
+
+.contact-block h3 {
+    text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.1rem;
     color: #202628;
     padding: 30px 0;
+    letter-spacing: 1px;
 }
-.forum li a{
-    color:#ff3333;
+
+.forum li a {
+    color: #ff3333;
 }
-.grey-form input{
+
+.grey-form input {
     border: 0px;
     height: 40px;
     width: 310px;
@@ -415,70 +527,80 @@ display: inline-block;
     margin: 10px 30px;
     background: #ffffff;
 }
-.grey-form p{
+
+.grey-form p {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     line-height: 24px;
     color: #4e5456;
-    padding:32px 30px 6px;
-
+    padding: 32px 30px 6px;
 }
-.grey-form textarea{
+
+.grey-form textarea {
     height: 82px;
     width: 310px;
     border: 0px;
     border-radius: 6px;
     margin: 10px 30px 20px;
 }
-.grey-form .bottom {
+
+.grey-form .botton {
     display: inline-block;
     background: #ff3333;
-    height: 40px;
-    width: 100px;
+    padding: 0px 25px;
     line-height: 40px;
     border-radius: 20px;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 30px;
-}
-.grey-form .bottom:hover {
-    background: #ffffff;
-}
-.grey-form .bottom a{
+    margin: 0px 30px;
     color: #ffffff;
+    cursor: pointer;
 }
-.grey-form .bottom a:hover{
+
+.grey-form .botton:hover {
+    background: #ffffff;
     color: #ff3333;
 }
-.contact-inform{
+
+.contact-inform {
     width: 33%;
     display: inline-block;
 }
-.contact-inform ul{
+
+.contact-inform ul {
     padding-left: 0px;
 }
-.contact-inform li{
+
+.contact-inform li {
     display: block;
-    border-top:1px solid #4e5456;
+    border-top: 1px solid #e7e7e7;
     padding: 30px 0;
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     line-height: 24px;
     color: #4e5456;
 }
-.contact-inform h4{
+
+.contact-inform li:last-child {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.contact-inform h4 {
     display: inline-block;
     font-size: 1.6rem;
     color: #ff3333;
     font-weight: bold;
     margin: 0px;
 }
-.contact-inform li i{
+
+.contact-inform li i {
     font-size: 2.6rem;
     float: left;
-    color:#202628;
+    color: #202628;
     margin-right: 25px;
 }
-.contact-inform a{
+
+.contact-inform a {
     display: block;
 }
